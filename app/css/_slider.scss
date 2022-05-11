@@ -1,0 +1,90 @@
+@keyframes slidy {
+    0% { left: 0%; }
+    10% { left: 0%; }
+    35% { left: -100%; }
+    55% { left: -100%; }
+    70% { left: -200%; }
+    85% { left: -200%; }
+    100% { left: -300%; }
+}
+.slider {
+    overflow: hidden;
+    max-width: 1400px;
+    margin: auto;
+    figure{
+        position: relative;
+        width: 400%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 13s slidy infinite;
+
+        img {
+            width: 25%;
+            float: left;
+            max-height: 850px;
+        }
+    }
+}
+
+.new_hero {
+    .text_container {
+        max-width: 1400px;
+        margin: auto;
+        background: #dddddd;
+        height: 140px;
+        position: relative;
+
+        .text {
+            position: absolute;
+            width: 600px;
+            background: #b44547;
+            right: -14px;
+            bottom: 14px;
+            line-height: 35px;
+            padding: 30px;
+            font-size: 20px;
+            -webkit-box-shadow: 4px 4px 15px 0px rgba(74,73,74,1);
+            -moz-box-shadow: 4px 4px 15px 0px rgba(74,73,74,1);
+            box-shadow: 4px 4px 15px 0px rgba(74,73,74,1);
+            color: white;
+        }
+
+        .triangle {
+            display: inline-block;
+            vertical-align: middle;
+            width: 14px;
+            height: 14px;
+            border-top: solid 7px #737070;
+            border-left: solid 7px #737070;
+            border-right: solid 7px transparent;
+            border-bottom: solid 7px transparent;
+            position: absolute;
+            right: -14px;
+            bottom: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .new_hero {
+        padding-top: 84px;
+        .slider {
+            width: calc(100% - 48px);
+            figure{
+                img{ max-height: 230px;}
+            }
+        }
+        .text_container {
+            width: calc(100% - 48px);
+            .text {
+                width: 60%;
+                line-height: 20px;
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+}

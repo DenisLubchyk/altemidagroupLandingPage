@@ -1,0 +1,75 @@
+.dignity {
+    *{
+        font-family: 'Dosis', sans-serif!important;
+    }
+    .dignity_inner {
+        max-width: 1400px;
+        padding: 0px 100px;
+        text-align: center;
+        margin: 120px auto 50px auto;
+        h1 {
+            font-size: 3.5em;
+            padding-left: 60px;
+        }
+        .dignity_container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 0 4rem 4rem;
+            grid-gap:30px;
+            margin: auto;
+
+            .card_dignity {
+                border-left: 1px solid #ccc;
+                text-align: center;
+                padding: 2rem 15px 2rem 45px;
+                line-height: 1.5;
+
+                .number {
+                    font-size: 50px;
+                    color: #b44547;
+                    font-weight: 600;
+                }
+                .description {
+                    font-size: 13px;
+                }
+            }
+            .card_dignity:last-child {
+                border-right: 1px solid #ccc;
+                padding: 2rem 45px 2rem 45px;
+            }
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .dignity_inner {
+            padding: 0px 20px;
+            margin: 50px auto 50px auto;
+            h1 {
+                font-size: 2em;
+                padding-left: 15px;
+            }
+            .dignity_container {
+                display: grid;
+                padding: 15px;
+                grid-gap:10px;
+
+                .card_dignity {
+                    padding: 0 0 0 10px ;
+
+                    .number {
+                        font-size: 30px;
+                    }
+                    .description {
+                        font-size: 11px;
+                    }
+                }
+                .card_dignity:last-child {
+                    padding: 0;
+                    border-right:none;
+                }
+                .card_dignity:first-child {
+                    border-left:none;
+                }
+            }
+        }
+    }
+}

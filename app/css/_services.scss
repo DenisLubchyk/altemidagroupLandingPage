@@ -1,0 +1,132 @@
+.services {
+    *{
+        font-family: 'Dosis', sans-serif!important;
+    }
+
+    .services_inner {
+        max-width: 1400px;
+        margin: auto;
+        padding: 0px 100px;
+        text-align: center;
+        margin-top: 60px;
+
+        h4{
+            font-size: 1.2em;
+            color: #847f7f;
+            margin: 10px 0;
+        }
+
+        h1{
+            font-size: 3.5em;
+            margin: 10px 0;
+        }
+
+        .description {
+            max-width: 70%;
+            margin: auto;
+            color: #847f7f;
+        }
+
+        .services_container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap:30px;
+            margin: auto;
+            padding: 4rem;
+
+            .card {
+                perspective:1500px;
+                position: relative;
+                height: 270px;
+
+                .card__side {
+                    position:absolute;
+                    top: 0;
+                    left: 0;
+                    width:100%;
+                    height:100%;
+                    transition:all .8s ease;
+                    backface-visibility: hidden;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                }
+
+                .card__side--front {
+                    background-color:#b44547;
+                    h3{
+                        font-weight: 600;
+                        font-size: 1.6em;
+                        color: white;
+                    }
+                    img{
+                        background:#dddddd;
+                        border-radius: 50%;
+                        padding: 5px;
+                    }
+                }
+                .card__side--back {
+                    background-color:#b44547;
+                    transform: rotateY(180deg);
+                    background: #24262b;
+                    color: white;
+                    font-size: 17px;
+                    line-height: 28px;
+                }
+                &:hover .card__side--front{
+                    transform: rotateY(-180deg);
+                }
+                &:hover .card__side--back{
+                    transform: rotateY(0);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .services {
+        .services_inner {
+            .services_container {
+                grid-template-columns: repeat(2, 1fr);
+                .card {
+                    padding: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .services {
+        .services_inner {
+            padding: 0 20px;
+
+            .description {
+                max-width: unset;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .services_container {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 2rem;
+
+                .card {
+                    padding: 1rem;
+
+                    .card__side--front {
+                        h3 { font-size: 1.2rem;}
+                    }
+
+                }
+            }
+        }
+    }
+}

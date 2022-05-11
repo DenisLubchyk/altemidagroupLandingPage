@@ -1,0 +1,103 @@
+{
+    "menu" : [
+        {
+            "menu_item_1":"O Nas",
+            "menu_item_2":"Usługi",
+            "menu_item_3":"Kontakts"
+        }
+    ],
+    "hero_description": [
+        {
+            "title":"Z nami możecie nie  martwić się z  biurokracją. To jest to,  z  czym możemy Ci pomóc :",
+            "description_1":"- legalizacja ",
+            "description_2":"- doradztwo kadrowe ",
+            "description_3":"- rejestracja działalności ",
+            "description_4":"- nieruchomość i  księgowość"
+        }
+    ],
+    "about_us":[
+        {
+            "title": "O nas",
+            "description":"Świadczymy kompleksowe usługi w zakresie rejestracji i obsługi działalności gospodarczej, imigracji biznesowej, legalizacji i  nieruchomości w Polsce.",
+            "btn1":"USŁUGI",
+            "btn2":"SKONTAKTUJ SIĘ"
+        }
+    ],
+    "services":[
+        {
+            "title":"Oferty firmy",
+            "description_title":"Co my robimy",
+            "description":"Opracowujemy i wdrażamy skuteczne rozwiązania dopasowane do indywidualnych potrzeb, dzięki którym nie zgubisz się w dużej ilości informacji prawnych.",
+            "card1":{
+                "title":"Usługi legalizacyjne",
+                "ser1":"- Karta czasowego pobytu",
+                "ser2":"- Karta stałego pobytu",
+                "ser3":"- Karta Polaka",
+                "ser4":"- Obywatelstwo",
+                "ser5":"- Niebieska karta UE",
+                "ser6":"- Karta rezydenta  długoterminowego UE"
+            },
+            "card2":{
+                "title":"HR i księgowość",
+                "ser1":"- Doradztwo kadrowe",
+                "ser2":"- Certyfikat rezydenta i A1",
+                "ser3":"- Oświadczenie i zezwolenie",
+                "ser4":"- Orzeczenie lekarskie",
+                "ser5":"- BHP",
+                "ser6":"- Księgowość"
+            },
+            "card3":{
+                "title":"Rejestracja działalności ",
+                "ser1":"- Statut firmy",
+                "ser2":"- Uzyskanie numeru PESEL",
+                "ser3":"- Podpis elektroniczny",
+                "ser4":"- Doradztwo w zakresie wyboru  działalności firmy zgodnie z PKD",
+                "ser5":"- Odpis o rejestracji firmy z Sądu ",
+                "ser6":"- Wirtualne biuro",
+                "ser7":"- Zmiany w KRS",
+                "ser8":"- Zamknięcie działalności"
+            },
+            "card4":{
+                "title":"Doradztwo i pomoc w przygotowaniu dokumentów ",
+                "ser1":"- Doradztwo w zakresie zatrudnienia i HR",
+                "ser2":"- Pomoc w uzyskaniu wypisu z polskiego Urzędu Stanu Cywilnego",
+                "ser3":"- Pomoc w przygotowaniu dokumentów prawnych",
+                "ser4":"- Odwołanie ",
+                "ser5":"- Uzyskanie Licencji",
+                "ser6":"- Deklaracja"
+            },
+            "card5":{
+                "title":"Doradztwo w zakresie nieruchomości ",
+                "ser1":"- Doradztwo przy zakupie i wynajmie nieruchomości ",
+                "ser2":"- Zezwolenie na zakup ziemi dla obcokrajowców"
+            },
+            "card6":{
+                "title":"Inne usługi",
+                "ser1":"- PIT-37",
+                "ser2":"- Wymiana praw jazdy na polskie",
+                "ser3":"- Zaświadczenie o niekaralności"
+            }
+
+        }
+    ],
+    "contact":[
+        {
+            "title":"Złóż wniosek o bezpłatną konsultację",
+            "description":"Oddzwonimy się  w dogodnym dla Ciebie terminie",
+            "span1":"Bezpłatnaja konsultacja",
+            "span2":"+48 508-187-979",
+            "span3":"(Viber/WhatsApp/Telegram)",
+            "span4":"altemidagroup@gmail.com",
+            "name":"Imię",
+            "telefon":"Telefon*",
+            "time":"Czas dogodny dla Ciebie (10 - 19)",
+            "btn":"Wysłać"
+        }
+    ],
+    "footer":[
+        {
+            "ft1":"Potrzebuję pomocy  ",
+            "ft2":"Subskrybuj"
+        }
+    ]
+}

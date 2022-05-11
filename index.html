@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTEMIDAGROUP</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/app/css/style.css">
+    <script src="./app/js/script.js"></script>
+</head>
+<body onclick>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.svg" alt="">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul class="header_nav">
+            <li><a data-section_name="about" href="#">О нас</a></li>
+            <li><a class="services_btn" data-section_name="services" href="#">Услуги</a></li>
+            <li><a class="contact_btn" data-section_name="contact" href="#">Связаться</a></li>
+            <!-- <li><a data-section_name="footer" href="#">Контакты</a></li> -->
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+    </header>
+    <section class="language">
+        <div class="language_inner">
+            <a data-lang='default' href="javascript:void(0)" onclick="changeLanguage('default')">RU</a>
+            <a data-lang='pl' href="javascript:void(0)" onclick="changeLanguage('pl')">PL</a>
+        </div>
+    </section>
+    <section class="new_hero">
+        <div class="slider">
+            <figure>
+                <img src="./images/slider1.jpg" alt>
+                <img src="./images/slider2.jpg" alt>
+                <img src="./images/slider3.jpg" alt>
+                <img src="./images/slider1.jpg" alt>
+            </figure>
+        </div>
+        <div class="text_container">
+            <div class="text">
+                <h3>С нами можете не беспокоиться о бюрократических проволочках. Это то, с чем мы вам можем помочь</h3>
+                <div>
+                    <span>- легализация</span> <br>
+                    <span>- кадровое сопровождение </span><br>
+                    <span>- регистрация бизнеса </span> <br>
+                    <span>- недвижимость и бухгалтерия </span> <br>
+                </div>
+
+            </div>
+            <div class="triangle"></div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about_inner">
+            <div class="about_container">
+                <img src="./images/about.jpg" alt="">
+                <div class="about_information">
+                    <div class="section_title"> О нас </div>
+                    <h1 class="title">
+                        Altemida Group
+                    </h1>
+                    <div class="description">
+                        Оказываем комплексные услуги в области регистрации и сопровождения бизнеса, бизнес-иммиграции, легализации, недвижимости в Польше.
+                    </div>
+                    <div class="btn_group">
+                        <button class="btn services">Услуги</button>
+                        <button class="btn contact">Связаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="services_inner">
+            <h4>Наши услуги</h4>
+            <h1>Чем мы занимаемся</h1>
+            <p class="description">Разрабатываем и реализуем эффективные решения с учетом индивидуальных потребностей,  помогаем  не потеряться в большом объеме правовой информации.</p>
+            <div class="services_container">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <img src="./images/icon1.png" alt="">
+                        <h3>Услуги по легализации</h3>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <span> Временный вид на жительство</span>
+                        <span> Постоянный вид на жительство</span>
+                        <span> Карта Поляка</span>
+                        <span> Гражданство</span>
+                        <span> Голубая карта EC</span>
+                        <span> Карта резидента</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <img src="./images/icon2.png" alt="">
+                        <h3> HR и бухгалтерские услуги</h3>
+                    </div>
+                    <div class="card__side card__side--back card__side--back">
+                        <span> Кадровое сопровождение</span>
+                        <span> Сертификаты резидента и А1</span>
+                        <span> Разрешение на работу от Вашей фирмы </span>
+                        <span> Медосмотр </span>
+                        <span> Охрана труда</span>
+                        <span> Бухгалтерия </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <img src="./images/icon3.png" alt="">
+                        <h3>Регистрация бизнеса</h3>
+                    </div>
+                    <div class="card__side card__side--back card__side--back">
+                        <span> Устав фирмы </span>
+                        <span> Песель</span>
+                        <span> Электронная подпись</span>
+                        <span> Подбор видов деятельности</span>
+                        <span> Выписки о регистрации фирмы из суда</span>
+                        <span> Виртуальный офис</span>
+                        <span>Изменения в KRS</span>
+                        <span> Закрытие фирмы</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <img src="./images/icon4.png" alt="">
+                        <h3>Консультация и помощь в оформлении документов</h3>
+                    </div>
+                    <div class="card__side card__side--back card__side--back">
+                        <span> Консультация по трудоустройству и кадрам</span>
+                        <span> Помощь в получении выписки из польского ЗАГСа</span>
+                        <span> Помощь в составлении юридических документов</span>
+                        <span> Апелляции</span>
+                        <span> Получение лицензии</span>
+                        <span> Декларации</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <img src="./images/icon5.png" alt="">
+                        <h3>Консультация по недвижимости</h3>
+                    </div>
+                    <div class="card__side card__side--back card__side--back">
+                        <span> Консультация по приобретению и аренде недвижимости </span>
+                        <span> Разрешение на покупку земли для иностранцев </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <img src="./images/icon6.png" alt="">
+                        <h3>Прочие услуги</h3>
+                    </div>
+                    <div class="card__side card__side--back card__side--back">
+                        <span> ПИТ-37</span>
+                        <span> Замена водительских прав на польские</span>
+                        <span> Справки о несудимости</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact_inner">
+            <h1>Оставить заявку на Бесплатную консультацию</h1>
+            <p class="description">Мы перезвоним вам в удобное для вас время</p>
+            <div class="contact_container">
+                <div class="information">
+                    <span>Бесплатная консультация</span>
+                    <span class="number">+48 508-187-979</span>
+                    <span>(Viber/WhatsApp/Telegram)</span>
+                    <span class="alt_mail">altemidagroup@gmail.com</span>
+                </div>
+                <form id="form" class="contact_form" action="">
+                    <input class="name" type="text" placeholder="Имя">
+                    <input class="number _req" type="text" placeholder="Телефон*">
+                    <input class="time" type="text" placeholder="Удобное для вас время ( 10 - 19 )">
+                    <input class="email" type="text" placeholder="Email">
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>ALTEMIDA GROUP</h4>
+                    <ul>
+                        <li><a href="#">NIP 9522225056</a></li>
+                        <li><a href="#">Regon: 521272962</a></li>
+                        <li class="adress"><a href="#">ul. Aleja Gen. Antoniego Chruściela "Montera" 88a, Warszawa</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="ft1">Нужна помощь</h4>
+                    <ul class="footer_link">
+                        <li><a class='about' href="#">О нас </a></li>
+                        <li><a class="services" href="#">Услуги</a></li>
+                        <li><a class="contact" href="#">Связаться</a></li>
+                        <li><a href="#">+48 508-187-979</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="ft2">Подпишись</h4>
+                    <div class="social-links">
+                        <a href="#"><img src="./images/inst.png" alt=""></a>
+                        <a href="#"><img src="./images/telega.png" alt=""></a>
+                        <a href="#"><img src="./images/fb.png" alt=""></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>

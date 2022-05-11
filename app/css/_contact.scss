@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+.contact {
+    *{
+        font-family: 'Dosis', sans-serif!important;
+    }
+    .contact_inner {
+        max-width: 1400px;
+        margin: auto;
+        padding: 0px 100px;
+        text-align: center;
+        margin-top: 80px;
+
+        h1{
+            font-size: 3.5em;
+            margin: 10px 0;
+            max-width: 70%;
+            margin: auto;
+        }
+        .description {
+            max-width: 70%;
+            margin: auto;
+            color: #847f7f;
+            font-size: 1.5em;
+        }
+
+        .contact_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+
+            .information {
+                width: 50%;
+                span {
+                    font-family: 'Arimo', sans-serif!important;
+                    display: block;
+                    font-size: 1.7em;
+                    line-height: 45px;
+                    font-weight: 100;
+                }
+                .alt_mail { color: #b44547; }
+                .number { font-weight: 600; }
+            }
+            .contact_form {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                input {
+                    display: block;
+                    height: 45px;
+                    width: 45%;
+                    border-width: 0 0 2px 0;
+                    border-color: #000;
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    margin: 4% 2.5%;
+                    border-radius: 0;
+                }
+                input._error {
+                    box-shadow: 0 0 3px red;
+                    border-bottom: 2px solid red;
+                }
+                input:focus-visible{
+                    outline: none;
+                }
+                .time,.email { width:100%; }
+                button {
+                    margin-top: 30px;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 30px;
+                    font-size: 1.1em;
+                    background: #b44547;
+                    color: #fff;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1400px) {
+        .contact_inner {
+            h1{ font-size: 3em; }
+            .description { font-size: 1.2em; }
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .contact_inner {
+            padding: 0 20px;
+            h1{
+                font-size: 2em;
+                max-width: unset;
+            }
+            .description {
+                font-size: 0.8em;
+                max-width: unset;
+            }
+
+            .contact_container {
+                display: block;
+                margin-top: 20px;
+                .information {
+                    width: 100%;
+
+                    span{
+                        font-size: 1.2em;
+                        line-height: 40px;
+                    }
+                }
+                .contact_form { width: 100%;}
+            }
+        }
+    }
+}
